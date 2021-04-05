@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/record/record",
+    "pages/chart/chart",
+    "pages/chart/datalist/datalist",
+    "pages/my/my",
+    "pages/mybill/mybill"
+  ],
+  "window": {
+    "backgroundColor": "#ffffff",
+    "navigationBarBackgroundColor": "#282846",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#007580",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "./images/home.png",
+        "selectedIconPath": "./images/home-active.png"
+      },
+      {
+        "pagePath": "pages/record/record",
+        "text": "记账",
+        "iconPath": "./images/record.png",
+        "selectedIconPath": "./images/record-active.png"
+      },
+      {
+        "pagePath": "pages/chart/chart",
+        "text": "统计",
+        "iconPath": "./images/char.png",
+        "selectedIconPath": "./images/char-active.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "./images/my.png",
+        "selectedIconPath": "./images/my-active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

@@ -1,0 +1,61 @@
+.my-box{
+  height: 160rpx;
+  background-color: #d8ebe4;
+  padding: 40rpx 0;
+}
+.my-info{
+  height: 160rpx;
+  padding: 0 40rpx;
+}
+.my-img{
+  width: 160rpx;
+  height: 160rpx;
+  background-color: #ddd;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 10rpx 10rpx #fff;
+}
+.open-btn{
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0;
+  margin: 0; 
+  background-color: transparent; 
+}
+.nickname{
+  line-height: 160rpx;
+  color: #444;
+  font-size: 28rpx;
+  margin-left: 40rpx;
+}
+.list{
+  padding: 20rpx;
+  margin-top: 20rpx;
+  background: #f9f9f9;
+}
+.list-item{
+  padding: 0 40rpx;
+  height: 100rpx;
+  border-bottom: 1rpx solid #e8e8e8;
+}
+.list-item:last-child{
+  border: none
+}
+.title{
+  font-size: 32rpx;
+  line-height: 100rpx;
+  color: #444;
+}
+.arrow{
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 30rpx;
+}
+.my-text{
+  line-height: 160rpx;
+  text-align: center;
+  font-size: 24rpx;
+}

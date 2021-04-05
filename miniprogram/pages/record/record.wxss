@@ -1,0 +1,147 @@
+.header{
+  height: 160rpx;
+  background-color: #007580;
+}
+.content{
+  margin-top: -100rpx;
+  padding: 0 20rpx;
+}
+.types{
+  height: 300rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  padding-top: 40rpx;
+}
+.types-title{
+  height: 60rpx;
+  width: 280rpx;
+  margin: 0 auto;
+  border-radius: 30rpx;
+  overflow: hidden;
+  border: 2rpx solid #007580;
+}
+.title-item{
+  width: 140rpx;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 32rpx;
+}
+.active{
+  background-color: #007580;
+  color: white;
+}
+.banner{
+  margin-top: 30rpx;
+}
+
+.swiper-item{
+  height: 300rpx;
+}
+.swiper-item .item{
+  flex: 80rpx 1;
+  margin: 20rpx 60rpx;
+  float: left;
+}
+.swiper-item .item:nth-child(4n){
+  margin-right: 0; 
+}
+.swiper-item .icon{
+  width: 60rpx;
+  height: 60rpx;
+  margin: 0 auto;
+}
+.swiper-item .desc{
+  text-align: center;
+  font-size: 28rpx;
+}
+.swiper-item .big-active{
+  transform: scale(1.2);
+  color: #007580;
+}
+.account{
+  padding: 40rpx;
+  margin-top: 30rpx;
+}
+.account-title{
+  padding: 20rpx 0;
+  border-bottom: 1px solid #d4d4d4;
+}
+.account-item{
+  margin-top: 50rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  margin-right: 10rpx;
+  font-size: 24rpx;
+  color: #666;
+  background-color: #f6f6f6;
+  border-radius: 20rpx; 
+  padding: 0 20rpx;
+}
+.account .active{
+  background-color: #007580;
+  color: white;
+}
+
+.info{
+  padding: 40rpx;
+  margin-top: 40rpx;
+}
+.time{
+  position: relative;
+}
+.wechat-picker{
+  font-size: 28rpx;
+  width: 100%;
+  position: absolute;
+}
+.money{
+  margin-top: 10rpx;
+}
+.remarks{
+  margin-top: 10rpx;
+}
+.money text{
+  font-size: 28rpx;
+  line-height: 44rpx;
+  margin-right: 60rpx;
+}
+.remarks text{
+  font-size: 28rpx;
+  line-height: 44rpx;
+  margin-right: 60rpx;
+}
+input{
+  font-size: 28rpx;
+}
+.time-text{
+  font-size: 28rpx;
+  color: #666;
+  margin-left: 110rpx;
+}
+
+
+.save-box{
+  margin-top: 40rpx;
+  position: relative;
+  padding: 0 40rpx;
+  line-height: 80rpx;
+}
+.save-btn{
+  background-color: #007580;
+  height: 80rpx;
+  color: white;
+  text-align: center;
+  border-radius: 30rpx;
+   font-size: 28rpx;
+   line-height: 80rpx;
+}
+button:not([size='mini']){
+  height: 80rpx;
+  border-radius: 30rpx;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  position: absolute;
+}

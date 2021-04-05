@@ -1,0 +1,47 @@
+<view class="chart">
+  <view class="nav">
+    <view class="date-info">
+        <picker class="picker" mode="date" start="startTime" endTime="endTime" bindchange="changeDate" value="{{datetime}}">{{selectDate ? selectDate: '请选择日期'}}</picker>
+    </view>
+  </view>
+  <view class="consumption">
+    <view class="consumption-item {{ type === 'shouru' ? 'bd-col': ''}}" data-type="shouru" bindtap="changeIndex">
+      <view>
+        收入
+      </view>
+      <view class="price">￥{{total.shouru}}</view>
+    </view>
+    <view class="consumption-item {{ type === 'zhichu' ? 'bd-col': ''}}" data-type="zhichu" bindtap="changeIndex">
+      <view>
+        支出
+      </view>
+      <view class="price">￥{{total.zhichu}}</view>
+    </view>
+  </view>
+
+  <view class="canvas-box">
+    <canvas class="canvas" canvas-id="Canvas"></canvas>
+  </view>
+
+  <view class="list-data">
+  <!-- 尾部数据 -->
+      <view class="list-item clearfix" wx:for="{{recoredDates}}" wx:key="index" data-index="{{index}}" data-costtype="{{item.costType}}" data-type="{{item.type}}" bindtap="indata" >
+      <view class="data-img fl">
+        <image class="auto-img" src="{{item.src}}"></image>
+      </view>
+      <view class="bar-box fl">
+        <view class="bar-title">
+          {{item.name}}
+        </view>
+        <view class="bar">
+          <view class="small-bar" style="width:{{item.data}}%;background:{{item.color}};"></view>
+        </view>
+      </view>
+
+      <view class="bar-money fl">
+        <view class="money fl" style="color:{{item.color}}">￥{{item.total}}</view>
+      </view>
+      <!--  -->
+    </view>
+  </view>
+</view>

@@ -1,0 +1,47 @@
+<view class="home">
+  <view class="header">
+    <view class="top">
+      <view class="top-title">本月结余</view>
+      <view class="top-total">{{costMonth.jieyu}}</view>
+    </view>
+    <view class="bottom">
+      <view class="line"></view>
+        <view class="item-bottom clearfix">
+          <view class="fl bottom-title">本月收入</view>
+          <view class="fl bottom-text">{{costMonth.shouru}}</view>
+        </view>
+        <view class="item-bottom clearfix">
+            <view class="fl bottom-title">本月支出</view>
+            <view class="fl bottom-text">{{costMonth.zhichu}}</view>
+          </view>
+    </view>
+  </view>
+  <view class="content">
+    <view class="date-title clearfix">
+      <view class="fl">
+        <view class="fl date-item">{{currentDate ? currentDate : '未选择'}}</view>
+        <view class="fl date-item" hidden="{{!today}}">今天</view>
+        <view class="fl date-item">收入：{{cost.shouru}}</view>
+        <view class="fl">支出：{{cost.zhichu}}</view>
+      </view>
+      <view class="fr date-right">
+        <view class="more" bindtap="selectDate">...</view>
+        <picker class="wechat-picker" mode='date' start="{{dateRange.start}}" end="{{dateRange.end}}" bindchange="selectDate">
+          <view class="time">选我时间</view>
+        </picker>
+      </view>
+    </view>
+  </view>
+  <view class="items">
+      <view class="item clearfix" wx:for="{{bookKeppingData}}" data-index="index" wx:key="index">
+      <view class="item-icon fl">
+        <image src="{{item.src}}" class="auto-img"></image>
+      </view>
+      <view class="item-text fl">
+        <view class="huo">{{item.title}}</view>
+        <view>{{item.comment}}</view>
+      </view>
+      <view class="fr {{item.costType == 'zhichu' ? 'item-price' : 'item-in'}}">{{item.costType == 'zhichu' ? '-' : '+'}}￥{{item.money}}</view>
+      </view>
+  </view>
+</view>

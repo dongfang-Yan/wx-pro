@@ -1,0 +1,15 @@
+<view class="datalist">
+  <view class="list-item" wx:for="{{datalist}}" wx:key="index" data-index="{{index}}" data-id="{{item._id}}" bindtap="deleteBill">
+    <view class="item-img fl">
+      <image class="auto-img" src="{{item.src}}"></image>
+    </view>
+    <view class="item-title fl">
+      <view class="title">{{item.title}}</view>
+      <view class="time">{{item.date}}</view>
+    </view>
+    <view class="item-price fl">￥{{item.money}}</view>
+    <view class="fl delete">
+    <image class="auto-img" src="../../images/delete.png"></image>
+    </view>
+  </view>
+</view>

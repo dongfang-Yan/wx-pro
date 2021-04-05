@@ -1,0 +1,30 @@
+/* miniprogram/pages/datalist/datalist.wxss */
+.list-item{
+  font-size: 28rpx;
+  padding: 20rpx 40rpx;
+  overflow: hidden;
+  height: 80rpx;
+  border-bottom: 1px solid #ddd;
+}
+.backbtn{
+  margin: 30rpx 0;
+}
+.item-img{
+  width: 60rpx;
+  height: 60rpx;
+  margin-top: 10rpx;
+  }
+.item-title{
+  padding-left: 20rpx;
+  width: calc(100% - 60rpx - 180rpx - 20rpx)
+}
+.delete{
+  width: 60rpx;
+  height: 60rpx;
+  margin-top: 10rpx;
+}
+.item-price{
+  color: red;
+  line-height: 80rpx;
+  width: 120rpx;
+}

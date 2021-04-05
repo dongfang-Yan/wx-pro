@@ -1,0 +1,45 @@
+<view class="record">
+  <view class="header">
+    
+  </view>
+  <view class="content">
+    <view class="types clearfix">
+      <view class="types-title clearfix">
+         <view class="fl title-item {{item.isActive ? 'active' : ''}}" wx:for="{{tabbar}}" wx:key="index" bindtap="chagneActive" data-active="{{item.isActive}}" data-index="{{index}}">{{item.title}}</view>
+      </view>
+ <view class="banner">
+              <view class="swiper-item">
+              <view class="item fl {{item.selected ? 'big-active' : ''}}" wx:for="{{bookKeepingData}}" wx:key="index" data-index="{{index}}" data-selected="{{item.selected}}" bindtap="selectedNav">
+                <view class="icon">
+                <image class="auto-img" src="{{item.src}}"></image>
+                </view>
+                <view class="desc">{{item.title}}</view>
+              </view>
+            </view>
+    </view>
+    </view>
+
+    <view class="account">
+      <view class="account-title">账户选择</view>
+      <view class="account-item fl {{item.isActive ? 'active' : ''}}" wx:for="{{account}}" data-index="{{index}}" data-active="{{item.isActive}}" bindtap="accountChange" wx:key="index">{{item.title}}</view>
+    </view>
+
+    <view class="info">
+       <view class="time clearfix">
+        <picker class="wechat-picker" mode='date' start="{{dateRange.start}}" end="{{dateRange.end}}" data-title="date" bindchange="getInfo" >日期</picker>
+        <view class="fl time-text">
+          {{info.date}}
+        </view>
+       </view>
+
+        <view class="money clearfix"><text class="fl">金额</text><input class="weui-input" placeholder="输入金额" type="digit" bindchange="getInfo" maxlength="20" data-title="money"/></view>
+        <view class="remarks clearfix"><text class="fl">备注</text><input class="weui-input" placeholder="输入备注" type="text" confirm-type="done" maxlength="30" bindchange="getInfo" data-title="comment"/></view>
+    </view>
+  </view>
+   
+  <view class="save-box">
+   <view class="save-btn" bindtap="bookKeeping">保存</view>
+    <button class="open-btn" wx:if="{{!isAuth}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"></button>
+  </view>
+
+</view>

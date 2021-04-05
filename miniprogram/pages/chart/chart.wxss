@@ -1,0 +1,209 @@
+.nav{
+  display: flex;
+  /* background-color: #007580; */
+  padding: 0 20rpx;
+  z-index: 102;
+}
+.date-info{
+  padding:40rpx;
+  width: 100%;
+}
+.picker{
+  border-radius: 20rpx;
+  color: white;
+  font-size: 30rpx;
+  padding: 8rpx 20rpx;
+  background-color: #007580;
+}
+.consumption{
+  display: flex;
+  padding: 0 30rpx;
+  text-align: center;
+  justify-items: center;
+}
+.consumption .consumption-item{
+  flex:1;
+  padding: 10rpx 0;
+}
+.consumption .consumption-item .price{
+  font-weight: bold;
+}
+.picker-txt{
+  display: inlin-block;
+}
+.year,.date{
+  width: 160rpx;
+  height: 88rpx;
+  display: flex;
+  font-size: 24rpx;
+  color: #444;
+}
+.arrow{
+  width: 24rpx;
+  height: 24rpx;
+  margin-top: 32rpx;
+  margin-left: 20rpx;
+}
+.y{
+  line-height: 88rpx;
+  font-weight: bold;
+}
+.y-list{
+  margin-left: -20rpx;
+  left: 0;
+}
+
+.year-item{
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+
+.month{
+  width: calc(100% - 320rpx);
+  height: 88rpx;
+  overflow-x: auto;
+}
+.month-item{
+  font-size: 24rpx;
+  text-align: center;
+  color: #444;
+  line-height: 88rpx;
+  float: left;
+  width: 80rpx;
+}
+.line{
+  width: 2rpx;
+  background-color: #333;
+  height: 32rpx;
+  margin-top: 28rpx;
+  margin-left: 10rpx;
+}
+.filter{
+  padding-left: 20rpx;
+  line-height: 88rpx;
+}
+.icon-filter{
+  width: 32rpx;
+  height: 32rpx;
+  margin-top: 28rpx;
+  margin-left: 10rpx;
+}
+.date{
+  display: flex;
+  position: relative;
+}
+.date-day{
+  position: absolute;
+  top: -720rpx;
+  width: 100%;
+  max-height: 640rpx;
+  background-color: #ffc700;
+  overflow-y: auto;
+  transition: top .2s ease-in;
+  z-index: 100;
+  /* display: none; */
+}
+.day{
+  right: -20rpx;
+}
+.day-item{
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+.show{
+  top: 88rpx;
+  /* display: block; */
+}
+.selected{
+  background-color: #ffff00;
+}
+.month-show{
+  background-color: #fedd2e;
+  font-weight: bold;
+}
+
+.title{
+  display: flex;
+  margin-top: 20rpx;
+  background-color: #fff;
+  padding: 10rpx 0;
+}
+.title-item{
+  width: 50%;
+  height: 140rpx;
+  position: relative;
+}
+.title-item-content{
+  height: 100rpx;
+  padding: 10rpx;
+  top: 20rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 28rpx;
+  position: absolute;
+}
+.bd{
+  padding: 10rpx;
+  border-radius: 10rpx;
+  border: 1px solid transparent;
+}
+.bd-col{
+  background-color: #fed049;
+}
+.tl{
+  color: #333;
+}
+
+.price{
+  display: inline;
+}
+.canvas{
+  display: block;
+  height: 600rpx;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+.list-item{
+  padding: 40rpx;
+  margin-top: 30rpx;
+  overflow: hidden;
+}
+.data-img{
+  width: 60rpx;
+  height: 60rpx;
+}
+.bar-box{
+  height: 60rpx;
+  padding-left:20rpx;
+  width: calc(100% - 60rpx - 180rpx);
+}
+.bar-title{
+  height: 30rpx;
+  font-size: 24rpx;
+  margin-bottom: 20rpx;
+}
+.bar{
+  height: 10rpx;
+  background: #ddd;
+  position: relative;
+  border-radius: 10rpx;
+}
+.bar-money{
+  width: 130rpx;
+  margin-left: 20rpx;
+  line-height: 60rpx;
+}
+.bar-money .money{
+  font-size: 28rpx;
+}
+
+/* 进度条 */
+.small-bar{
+  position: absolute;
+  height: 10rpx;
+  border-radius: 10rpx;
+}

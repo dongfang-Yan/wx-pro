@@ -1,0 +1,27 @@
+<view class="my">
+  <view class="my-box">
+    <view class="my-info">
+    <view class="fl my-img">
+    <view wx:if="{{isAuth}}">
+      <image class="auto-img" src="{{userInfo.avatarUrl}}" mode="widthFix"></image>
+    </view>
+    <view wx:if="{{!isAuth}}">
+     <view class="my-text">获取头像</view>
+       <button class="open-btn" open-type="getUserInfo" bindgetuserinfo="getUserInfo"></button>
+    </view>
+     
+    </view>
+    <view class="fl nickname" wx:if="{{isAuth}}">{{userInfo.nickName}}</view>
+    </view>
+  </view>
+  <view class="list">
+    <view class="list-item" bindtap="gobill">
+      <view class="fl title">我的记账</view>
+      <view class="fr arrow">
+        <image class="auto-img" src="../../images/arrow-right.png"></image>
+      </view>
+    </view>
+
+  </view>
+  
+</view>

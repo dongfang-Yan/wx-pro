@@ -1,0 +1,47 @@
+{
+  "title": "购物",
+  "src": "cloud://sun-test.7375-sun-test-1301841047/images/a1.png",
+  "type": "gouwu"
+}
+
+{
+  "title": "餐饮",
+  "src": "cloud://sun-test.7375-sun-test-1301841047/images/a2.png",
+  "type": "canyin"
+}
+
+{
+  "title": "出行",
+  "src": "cloud://sun-test.7375-sun-test-1301841047/images/a3.png",
+  "type": "chuxing"
+}
+
+{
+  "title": "医疗",
+  "src": "cloud://sun-test.7375-sun-test-1301841047/images/a4.png",
+  "type" : "yiliao"
+}
+
+{
+  "title": "娱乐",
+  "src": "cloud://sun-test.7375-sun-test-1301841047/images/a5.png",
+  "type" : "yule"
+}
+
+{
+  "title": "交通",
+  "src": "cloud://sun-test.7375-sun-test-1301841047/images/a6.png",
+  "type": "jiaotong"
+}
+
+{
+  "title": "学习",
+  "src": "cloud://sun-test.7375-sun-test-1301841047/images/a7.png",
+  "type": "xuexi"
+}
+
+{
+  "title": "其他",
+  "src": "cloud://sun-test.7375-sun-test-1301841047/images/a7.png",
+  "type": "qita"
+}
